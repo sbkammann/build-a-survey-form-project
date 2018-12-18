@@ -1,0 +1,39 @@
+body {
+  background-color: lightblue;
+}
+form{
+  padding: 5px 20px 25px 20px;
+}
+legend{
+  font-weight: bold;
+}
+fieldset {
+  margin: 10px 0 10px 0;
+}
+#title, #description {
+  text-align: center;
+  background-color: white;
+}
+#survey-form {
+  width: 33.3%;
+  margin: auto;
+  background-color: white;
+}
+#number{
+  width: 110px;
+}
+#comment-label, #dropdown-label{
+  font-weight: bold;
+}
+#comment{
+  width: 99%;
+}
+#submit {
+  font-weight: bold;
+  height: 30px;
+  width: 100px;
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}

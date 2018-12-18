@@ -7,16 +7,50 @@
     <link rel="stylesheet" href="css/app.css" type="text/css">
   </head>
   <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">Let us know how we can improve.</p>
-    <form id="survey-form">
 
-      <label for="name" id="name-label">Name:</label>
-      <input id="name" type="text" name="name" placeholder="Enter your name" required>
-      <label for="email" id="email-label">Email:</label>
-      <input id="email" type="email" name="email" placeholder="Enter your email address" required> <!--If I enter an email that is not formatted correctly, I will see an HTML5 validation error. -->
-      <label for="number" id="number-label">Age:</label>
-      <input id="number" type="number" name="number" placeholder="Enter your age" required min="1" max="99">  <!--If I enter non-numbers in the number input, I will see an HTML5 validation error. -->
+    <form id="survey-form">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Let us know how we can improve.</p>
+      <fieldset>
+        <legend>Personal Information:</legend>
+        <label for="name" id="name-label">Name:</label>
+        <input id="name" type="text" name="name" placeholder="Enter your name" required>
+        <label for="email" id="email-label">Email:</label>
+        <input id="email" type="email" name="email" placeholder="Enter your email address" required>
+        <label for="number" id="number-label">Age:</label>
+        <input id="number" type="number" name="number" placeholder="Enter your age" required min="1" max="99">
+     </fieldset>
+      <label for="dropdown" id="dropdown-label">Occupation:</label>
+      <select id="dropdown">
+        <option  disabled value>Select an option</option>
+        <option value="student">Student</option>
+        <option value="fullTimeJob">Full time job</option>
+        <option value="fullTimeLerner">Full time Lerner</option>
+        <option value="PreferNotToSay">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+      <fieldset>
+        <legend>Would you recommned us to others?</legend>
+        <input type="radio" name="recommend" value="Yes">Yes<br>
+        <input type="radio" name="recommend" value="Maybe">Maybe<br>
+        <input type="radio" name="recommend" value="No">No<br>
+      </fieldset>
+      <fieldset>
+        <legend>What do you need help with?</legend>
+        <input type="checkbox" name="suggestions" value="Front-endProjects">Front-end Projects<br>
+        <input type="checkbox" name="suggestions" value="Front-endProjects">Back-end Projects<br>
+        <input type="checkbox" name="suggestions" value="Front-endProjects">Data Visualization<br>
+        <input type="checkbox" name="suggestions" value="Front-endProjects">Challenges<br>
+        <input type="checkbox" name="suggestions" value="Front-endProjects">Open Source Community<br>
+        <input type="checkbox" name="suggestions" value="Front-endProjects">Videos<br>
+        <input type="checkbox" name="suggestions" value="Front-endProjects">Wiki<br>
+        <input type="checkbox" name="suggestions" value="Front-endProjects">Forum<br>
+      </fieldset>
+      <label for="comment" id="comment-label">Comments/Suggestions?</label>
+      <textarea id="comment" rows="4" cols="50" placeholder="Enter your comment here."></textarea>
+      <button id="submit" type="submit">Submit</button>
+
+
 
 
 
